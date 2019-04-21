@@ -1,0 +1,26 @@
+<ns:Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns="urn:Test.Namespace" xsi:schemaLocation="urn:Test.Namespace Test1.xsd">
+  <ns:element1 id="001">
+    <ns:element2 id="001.1" order="3">
+      <ns:element3 id="001.1.1"/>
+    </ns:element2>
+    <ns:element2 id="001.2" order="1">
+      <ns:element3 id="001.1.2"/>
+    </ns:element2>
+  </ns:element1>
+  <ns:element1 id="002">
+    <ns:element2 id="002.1" order="1">
+      <ns:element3 id="002.1.1"/>
+    </ns:element2>
+    <ns:element2 id="002.2" order="2">
+      <ns:element3 id="002.1.2"/>
+    </ns:element2>
+  </ns:element1>
+  <ns:element1 id="003">
+    <ns:element2 id="002.0" order="2">
+      <ns:element3 id="005.1.3"/>
+    </ns:element2>
+    <ns:element2 id="007.0" order="1">
+      <ns:element3 id="007.1.1"/>
+    </ns:element2>
+  </ns:element1>
+</ns:Root>
