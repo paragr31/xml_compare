@@ -1,27 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <ns:Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns="urn:Test.Namespace" xmlns:diff="http://namespaces.shoobx.com/diff" xsi:schemaLocation="urn:Test.Namespace Test1.xsd">
   <ns:element1 id="001">
     <ns:element2 id="001.1" order="3" diff:insert="" diff:update-attr="id:002.5;order:5">
       <ns:element3 id="001.1.1" diff:update-attr="id:002.5.1"/>
     </ns:element2>
-  <span style="DiffInsert">  </span><ns:element2 id="001.2" order="1">
+  <span class="DiffInsert"> <ns:element2 id="001.2" order="1">
       <ns:element3 id="001.1.2"/>
-    </ns:element2>
-  <span style="DiffDelete"><strike>  </strike></span><ns:element2 id="001.4" order="4" diff:delete="">
+    </ns:element2></span>
+  <span class="DiffDelete"><strike> <ns:element2 id="001.4" order="4" diff:delete="">
       <ns:element3 id="001.2.5"/>
-    </ns:element2>
+    </ns:element2></strike></span>
   </ns:element1>
   <ns:element1 id="002">
     <ns:element2 id="002.1" order="1" diff:insert="" diff:update-attr="id:001.4;order:4">
       <ns:element3 id="002.1.1" diff:update-attr="id:001.2.5"/>
     </ns:element2>
-  <span style="DiffInsert">  </span><ns:element2 id="002.2" order="2">
+  <span class="DiffInsert"><ns:element2 id="002.2" order="2">
       <ns:element3 id="002.1.2"/>
-    </ns:element2>
-  <span style="DiffDelete"><strike>  </strike></span><ns:element2 id="002.3" order="4" diff:delete="">
+    </ns:element2></span>
+  <span class="DiffDelete"><strike><ns:element2 id="002.3" order="4" diff:delete="">
       <ns:element3 id="002.3.1"/>
-    </ns:element2>
+    </ns:element2></strike></span>
     <ns:element2 id="002.5" order="5" diff:delete="">
       <ns:element3 id="002.5.1"/>
     </ns:element2>
@@ -33,8 +32,9 @@
     <ns:element2 id="007.0" order="1" diff:update-attr="id:002.0;order:2">
       <ns:element3 id="007.1.1" diff:update-attr="id:005.1.3"/>
     </ns:element2>
-  <span style="DiffDelete"><strike>  </strike></span><ns:element2 id="005.0" order="1" diff:delete="">
+  <span class="DiffDelete"><strike><ns:element2 id="005.0" order="1" diff:delete="">
       <ns:element3 id="007.1.1" diff:delete=""/>
-    </ns:element2>
+    </ns:element2></strike></span>
   </ns:element1>
 </ns:Root>
+

@@ -6,13 +6,14 @@ print os.path.dirname(xml_file)
 
 logdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) + "\\logs"
 
-os.makedirs(logdir) if not os.path.isdir(logdir)
-# xsl_filename = r"C:\PARAG\PythonProgramms\Python_Xml_Compare\libs\xml_sort_ss.xslt"
+if not os.path.isdir(logdir):
+    os.makedirs(logdir)
+xsl_filename = r"C:\PARAG\PythonProgramms\Python_Xml_Compare\libs\xml_sort_ss.xslt"
 
-# dom = ET.parse(xml_file)
-# xslt = ET.parse(xsl_filename)
-# transform = ET.XSLT(xslt)
-# newdom = transform(dom)
-# print(ET.tostring(newdom, pretty_print=True))
+dom = ET.parse(xml_file)
+xslt = ET.parse(xsl_filename)
+transform = ET.XSLT(xslt)
+newdom = transform(dom)
+print(ET.tostring(newdom, pretty_print=True))
 
 

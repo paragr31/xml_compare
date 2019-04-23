@@ -25,12 +25,12 @@
     <!-- `diff:insert` and `diff:delete` elements are only placed around
         text. -->
     <xsl:template match="diff:insert">
-        <span style="DiffInsert">
+        <span class="DiffInsert">
             <xsl:apply-templates/>
         </span>
     </xsl:template>
     <xsl:template match="diff:delete">
-        <span style="DiffDelete"><strike>
+        <span class="DiffDelete"><strike>
             <xsl:apply-templates/>
         </strike></span>
     </xsl:template>
